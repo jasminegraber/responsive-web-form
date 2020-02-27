@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Review</title>
+</head>
+<body>
+    <header>
+        <h1>The Code Review</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Signup for Our Newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name" id="full-name">Full Name</label> 
+                    <input type="text" name="name">
+
+                    <label for="email" id="email">Email Address</label>
+                    <input type="email" name="email">
+
+                    <label for="telephone">Phone Number</label>
+                    <input type="tel" name="telephone">
+
+                    <label for="address">Street Address</label>
+                    <input type="text" name="address">
+
+                    <label for="city">City</label>
+                    <input type="text" name="city">
+
+                    <label for="state">State</label>
+                    <select name="state" id="states">
+                        <option value="">Choose State</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="NY">NY</option>
+                        <option value="PA">PA</option>
+                    </select>
+
+                    <label for="zip-code">Zip Code</label>
+                    <input type="text" name="zip-code">
+                </fieldset>
+                <fieldset>
+                    <legend>Newsletter</legend>
+
+                    <p>Select the newsletter you would like to receive</p>
+
+                    <input type="checkbox" name="html">
+                    <label for="html">HTML News</label>
+
+                    <input type="checkbox" name="css">
+                    <label for="css">CSS News</label>
+
+                    <input type="checkbox" name="javascript">
+                    <label for="javascript">Javascript News</label>
+
+                    <p>Newsletter formet</p>
+
+                    <input type="radio" name="format">
+                    <label for="format">HTML</label>
+
+                    <input type="radio" name="format">
+                    <label for="format">HTML Text</label>
+
+                    <label for="topics">Other topics you'd like to hear about</label>
+                    <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Sign Up">
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>Copyright the Code Review</footer>
+</body>
+</html>
