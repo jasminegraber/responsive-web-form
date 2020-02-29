@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+form {
+    max-width: 100%;
+     margin: 0 auto;
+     text-align: left;
+}
+
+fieldset,
+input,
+select,
+textarea {
+    border: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    background-color: #ededed;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    height: 40px;
+}
+
+input::focus {
+    border: 3px solid blue;
+}
