@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Code Review</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Spartan:400,700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -19,46 +16,48 @@
       <h1>The Code Review</h1>
     </header>
     <main>
-      <section>
+      <section class="sub-header">
         <h2>Signup for Our Newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
       </section>
+
+      <hr class="top-divider">
     
         <form>
-          <fieldset class="contact-information">
+          <fieldset>
             <legend>
-                <h3>Contact Information</h3>
+                <h3 class="contact-information">Contact Information</h3>
             </legend>
 
-            <div>
+            <div class="container">
               <label for="name">Full Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" placeholder="Required" class="input-layout">
             </div>
 
-            <div>
+            <div class="container">
               <label for="email">Email Address</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" placeholder="Required" class="input-layout">
             </div>
 
-            <div>
+            <div class="container">
               <label for="telephone">Phone Number</label>
-              <input type="tel" name="telephone" id="telephone" />
+              <input type="tel" name="telephone" id="telephone" class="input-layout">
             </div>
 
-            <div>
+            <div class="container">
               <label for="address">Street Address</label>
-              <input type="text" name="address" id="address" />
+              <input type="text" name="address" id="address" class="input-layout">
             </div>
 
-            <div>
+            <div class="container">
               <label for="city">City</label>
-              <input type="text" name="city" id="city" />
+              <input type="text" name="city" id="city" class="input-layout">
             </div>
 
-            <div>
+            <div class="container">
               <label for="state">State</label>
-              <select name="state" id="state">
-                <option value="">Choose State</option>
+              <select name="state" id="state" class="input-layout">
+                <option value="default">Choose State</option>
                 <option value="CA">CA</option>
                 <option value="CO">CO</option>
                 <option value="NY">NY</option>
@@ -66,48 +65,48 @@
               </select>
             </div>
 
-            <div>
+            <div class="container">
               <label for="zip-code">Zip Code</label>
-              <input type="text" name="zip-code" id="zip-code"/>
+              <input type="text" name="zip-code" id="zip-code" class="input-layout"/>
             </div>
           </fieldset>
-          <fieldset class="">
+          <hr class="bottom-divider">
+          <fieldset>
             <legend>
-                <h3>Newsletter</h3>
+                <h3 >Newsletter</h3>
             </legend>
 
-            <p>Select the newsletter you would like to receive</p>
+            <p class="newsletter-choice">Select the newsletter you would like to receive</p>
 
             <div>
             <input type="checkbox" name="html" id="html"/>
-            <label for="html">HTML News</label>
+            <label for="html" class="checkradio-label">HTML News</label>
         </div>
 
             <div>
             <input type="checkbox" name="css" id="css"/>
-            <label for="css">CSS News</label>
+            <label for="css" class="checkradio-label">CSS News</label>
         </div>
         <div>
             <input type="checkbox" name="javascript" id="javascript" />
-            <label for="javascript">Javascript News</label>
+            <label for="javascript" class="checkradio-label">Javascript News</label>
         </div>
 
             <p>Newsletter format</p>
 
             <div>
             <input type="radio" name="format" id="html-format" />
-            <label for="html-format">HTML</label>
+            <label for="html-format" class="checkradio-label">HTML</label>
         </div>
 
         <div>
 
             <input type="radio" name="format" id="plain-text"/>
-            <label for="plain-text">Plain Text</label>
+            <label for="plain-text" class="checkradio-label">Plain Text</label>
         </div>
-        <div>
+        <div class="container">
          <label for="topics">Other topics you'd like to hear about</label>
-        </div>
-        <div>
+    
             <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
         </div>
 
@@ -115,7 +114,8 @@
           </fieldset>
         </form>
 
+
     </main>
-    <footer>Copyright the Code Review</footer>
+    <footer>&copy; 2020 The Code Review</footer>
   </body>
 </html>
