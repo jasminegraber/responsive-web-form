@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Code Review</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Spartan:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -26,37 +26,37 @@
         <form>
           <fieldset>
             <legend>
-                <h3 class="contact-information">Contact Information</h3>
+                <h3>Contact Information</h3>
             </legend>
 
             <div class="container">
-              <label for="name">Full Name</label>
-              <input type="text" name="name" id="name" placeholder="Required" class="input-layout">
+            <label for="name" class="contact-label">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="Required" class="item" required>
             </div>
 
             <div class="container">
-              <label for="email">Email Address</label>
-              <input type="email" name="email" id="email" placeholder="Required" class="input-layout">
+              <label for="email" class="contact-label">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="Required" class="item" required>
             </div>
 
             <div class="container">
-              <label for="telephone">Phone Number</label>
-              <input type="tel" name="telephone" id="telephone" class="input-layout">
+              <label for="telephone" class="contact-label">Phone Number</label>
+              <input type="tel" name="telephone" id="telephone" class="item">
             </div>
 
             <div class="container">
-              <label for="address">Street Address</label>
-              <input type="text" name="address" id="address" class="input-layout">
+              <label for="address" class="contact-label">Street Address</label>
+              <input type="text" name="address" id="address" placeholder="Mailing address for exclusive info" class="item">
             </div>
 
             <div class="container">
-              <label for="city">City</label>
-              <input type="text" name="city" id="city" class="input-layout">
+              <label for="city" class="contact-label">City</label>
+              <input type="text" name="city" id="city" class="item" placeholder="Connect with developers in your area">
             </div>
 
             <div class="container">
-              <label for="state">State</label>
-              <select name="state" id="state" class="input-layout">
+              <label for="state" class="contact-label">State</label>
+              <select name="state" id="state" class="item">
                 <option value="default">Choose State</option>
                 <option value="CA">CA</option>
                 <option value="CO">CO</option>
@@ -65,15 +65,15 @@
               </select>
             </div>
 
-            <div class="container">
-              <label for="zip-code">Zip Code</label>
+            <div class="container zip-code-container">
+              <label for="zip-code" class="contact-label">Zip Code</label>
               <input type="text" name="zip-code" id="zip-code" class="input-layout"/>
             </div>
           </fieldset>
           <hr class="bottom-divider">
           <fieldset>
             <legend>
-                <h3 >Newsletter</h3>
+                <h3 class="newsletter-info">Newsletter</h3>
             </legend>
 
             <p class="newsletter-choice">Select the newsletter you would like to receive</p>
@@ -104,7 +104,7 @@
             <input type="radio" name="format" id="plain-text"/>
             <label for="plain-text" class="checkradio-label">Plain Text</label>
         </div>
-        <div class="container">
+        <div class="textarea-container">
          <label for="topics">Other topics you'd like to hear about</label>
     
             <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
@@ -116,6 +116,6 @@
 
 
     </main>
-    <footer>&copy; 2020 The Code Review</footer>
+    <footer>Copyright The Code Review</footer>
   </body>
 </html>
