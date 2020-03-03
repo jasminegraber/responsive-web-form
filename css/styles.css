@@ -197,7 +197,7 @@ select:focus {
     height: 5px;
     margin-top: 20px;
     margin-bottom: 0;
-    max-width: 90%;
+
 }
 
 /* MEDIA QUERIES */
@@ -209,7 +209,9 @@ select:focus {
         width: 80%;
         margin: 0 auto;
     }
-
+.bottom-divider {
+    margin-top: 20px;
+}
     label {
         max-width: 100%;
     }
