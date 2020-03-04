@@ -70,8 +70,6 @@ input[type="email"],
 input[type="tel"],
 select {
     height: 50px;
-    /* width: 95%; */
-
 }
 
 textarea {
@@ -113,9 +111,10 @@ input,
 textarea {
     padding-right: 10px;
     padding-left: 10px;
-
 }
-
+#zip-code {
+    width: 30%;
+}
 textarea {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -128,6 +127,10 @@ label {
 input[type="checkbox"],
 input[type="radio"] {
     margin-right: 7px;
+}
+
+.checkbox-radio-container {
+    margin-bottom: 10px;
 }
 
 .textarea-container {
@@ -196,8 +199,24 @@ select:focus {
 
 @media (min-width: 768px) {
 
+main {
+    width: 50%;
+}
 
+.container {
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+}
     
-
+.contact-label {
+    width: 250px;
+    align-self: center;
+}
 }
