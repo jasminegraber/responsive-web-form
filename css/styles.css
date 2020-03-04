@@ -98,6 +98,10 @@ form,
     margin: 0 auto;
 }
 
+h3 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
 .container,
 .textarea-container {
     display: flex;
