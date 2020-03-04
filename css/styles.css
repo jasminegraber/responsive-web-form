@@ -113,8 +113,10 @@ textarea {
     padding-left: 10px;
 }
 #zip-code {
+	min-width: 200px;
     width: 50%;
 }
+
 textarea {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -214,19 +216,16 @@ input[type="tel"],
 select {
     width: 100%;
 }
-    
+
 .contact-label {
+	min-width: 250px;
     width: 250px;
     align-self: center;
 }
 
-fieldset {
-    display: flex;
-    flex-direction: coloumn;
-    justify-content: space-between;
-   }
 
    .zip-code-container {
     width: 48%;
 }
+
 }
