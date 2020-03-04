@@ -113,7 +113,7 @@ textarea {
     padding-left: 10px;
 }
 #zip-code {
-    width: 30%;
+    width: 50%;
 }
 textarea {
     padding-top: 10px;
@@ -218,5 +218,15 @@ select {
 .contact-label {
     width: 250px;
     align-self: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: coloumn;
+    justify-content: space-between;
+   }
+
+   .zip-code-container {
+    width: 48%;
 }
 }
